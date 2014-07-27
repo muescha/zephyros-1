@@ -139,6 +139,9 @@ property (API) api
 - (void) log(String str)                   # shows up in the log window
 - (void) alert(String str[, Float delay])  # shows in a fancy alert; optional delay is seconds
 
+- (void) show_box(String str)              # shows in a fancy permanent alert
+- (void) hide_box                          # hide the permanent alert
+
 - (void) bind(String key,              # case-insensitive single-character string; see link below
               Array<String> modifiers, # may contain any number of: "cmd", "ctrl", "alt", "shift"
               Function fn)             # javascript fn that takes no args; return val is ignored
